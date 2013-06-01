@@ -2,8 +2,10 @@
 
 angular.module('taarifaApp')
   .controller 'MainCtrl', ($scope) ->
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
+    $scope.reports = [
+        title: "Flooding"
+        description: "My house is under water!"
+      ,
+        title: "Pipe burst"
+        description: "Water on the streets!"
     ]
