@@ -1,0 +1,27 @@
+{
+    "version": "1",
+    "name": "Taarifa",
+    "launch_path": "index.html",
+    "description": "Taarifa: Building the infrastructure of nations",
+    "icons": {
+        "16": "styles/images/logo16.png",
+        "32": "styles/images/logo32.png",
+        "48": "styles/images/logo48.png",
+        "64": "styles/images/logo64.png",
+        "128": "styles/images/logo128.png"
+    },
+    "developer": {
+        "name": "Taarifa developers",
+        "url": "http://taarifa.org"
+    },
+    "installs_allowed_from": ["*"],
+    "default_locale": "en",
+    "permissions": {
+        "desktop-notification": {
+            "description" : "To show notifications"
+        },
+        "geolocation": {
+            "description" : "Marking out user location"
+        }
+    }
+}
