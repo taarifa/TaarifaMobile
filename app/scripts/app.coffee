@@ -3,8 +3,11 @@
 angular.module('taarifaApp', [])
   .config ($routeProvider) ->
     $routeProvider
-      .when '/',
+      .when '/reports',
         templateUrl: 'views/main.html'
         controller: 'MainCtrl'
+      .when '/reports/new',
+        templateUrl: 'views/newreport.html'
+        controller: 'NewReportCtrl'
       .otherwise
-        redirectTo: '/'
+        redirectTo: '/reports'
