@@ -1,11 +1,5 @@
 'use strict'
 
 angular.module('taarifaApp')
-  .controller 'MainCtrl', ($scope) ->
-    $scope.reports = [
-        title: "Flooding"
-        description: "My house is under water!"
-      ,
-        title: "Pipe burst"
-        description: "Water on the streets!"
-    ]
+  .controller 'MainCtrl', ($scope, Report) ->
+    $scope.reports = Report.query()

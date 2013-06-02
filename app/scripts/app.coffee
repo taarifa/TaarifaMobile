@@ -1,6 +1,6 @@
 'use strict'
 
-angular.module('taarifaApp', [])
+angular.module('taarifaApp', ['reportService'])
   .config ($routeProvider) ->
     $routeProvider
       .when '/reports',
