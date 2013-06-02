@@ -11,6 +11,9 @@
         <a href="#">
           <p><strong>{{report.title}}</strong></p>
           <p>{{report.desc}}</p>
+          <p class="right">
+            {{report.latitude}}, {{report.longitude}} | {{report.created_at | date:'short'}}
+          </p>
         </a>
       </li>
     </ul>
