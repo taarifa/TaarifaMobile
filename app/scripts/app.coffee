@@ -1,6 +1,6 @@
 'use strict'
 
-angular.module('taarifaApp', ['reportService'])
+angular.module('taarifaApp', ['reportService', 'ngGeolocation'])
   .config ($routeProvider) ->
     $routeProvider
       .when '/reports',
