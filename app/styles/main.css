@@ -42,19 +42,10 @@ section[role="region"] > header:first-child .icon.icon-settings {
   background-image: url(images/settings.png);
 }
 
-[data-type="list"] li > a aside img {
-  height: 4rem;
-  width: 4rem;
-  margin: 1rem 1rem 0 0;
+[data-type="list"] li {
+  height: 8rem;
 }
-
-[data-type="list"] li > a aside.pack-end.install {
-  background: url(images/download.png) no-repeat;
-  height: 3rem;
-  width: 3rem;
-  margin: 1.5rem 0 0 1rem;
-}
-
-#settings-view form {
-	margin: 1.5rem;
+[data-type="list"] li p.right{
+  float: right;
+  font-size: 1rem;
 }
