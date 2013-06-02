@@ -255,7 +255,8 @@ module.exports = function (grunt) {
             'images/{,*/}*.{gif,webp}',
             'styles/fonts/*',
             'styles/gaia/**/*',
-            'styles/images/**/*'
+            'styles/images/**/*',
+            'manifest.webapp'
           ]
         }]
       }
