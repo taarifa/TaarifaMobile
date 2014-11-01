@@ -15,7 +15,7 @@ module.exports = function (grunt) {
   };
 
   try {
-    yeomanConfig.app = require('./component.json').appPath || yeomanConfig.app;
+    yeomanConfig.app = require('./bower.json').appPath || yeomanConfig.app;
   } catch (e) {}
 
   grunt.initConfig({
@@ -54,6 +54,7 @@ module.exports = function (grunt) {
           middleware: function (connect) {
             return [
               lrSnippet,
+              mountFolder(connect, '.'),
               mountFolder(connect, '.tmp'),
               mountFolder(connect, yeomanConfig.app)
             ];
@@ -255,7 +256,14 @@ module.exports = function (grunt) {
             'images/{,*/}*.{gif,webp}',
             'styles/fonts/*',
             'styles/gaia/**/*',
-            'styles/images/**/*',
+            'styles/images/**/*'
+          ]
+        },{
+          expand: true,
+          dot: true,
+          cwd: '.',
+          dest: '<%= yeoman.dist %>',
+          src: [
             'manifest.webapp'
           ]
         }]
@@ -286,7 +294,6 @@ module.exports = function (grunt) {
   grunt.registerTask('build', [
     'clean:dist',
     'jshint',
-    'test',
     'coffee',
     'compass:dist',
     'useminPrepare',
@@ -295,7 +302,6 @@ module.exports = function (grunt) {
     'htmlmin',
     'concat',
     'copy',
-    'cdnify',
     'ngmin',
     'uglify',
     'rev',
