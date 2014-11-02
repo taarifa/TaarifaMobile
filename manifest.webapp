@@ -1,7 +1,7 @@
 {
     "version": "1",
     "name": "Taarifa",
-    "launch_path": "index.html",
+    "launch_path": "app/index.html",
     "description": "Taarifa: Building the infrastructure of nations",
     "icons": {
         "16": "images/logo16.png",
